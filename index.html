@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rishigesh — AI & ML Student</title>
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">Rishigesh</div>
+      <nav class="nav" id="nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button id="themeToggle" aria-label="Toggle theme">🌙</button>
+        <button id="burger" class="burger" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div>
+          <h1>Hi — I’m <span class="accent">Rishigesh</span></h1>
+          <p class="lead">AI &amp; ML Student — building practical AI systems, web & cloud apps, and secure solutions.</p>
+
+          <div class="cta">
+            <a class="btn" href="#projects">See my work</a>
+            <a class="btn outline" href="mailto:rishigeshkrishnasamy412@gmail.com">Contact me</a>
+            <a class="btn ghost" href="#" id="downloadResume">Download Resume</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="card-inner">
+            <h3>Role</h3>
+            <p>AI &amp; ML Student</p>
+            <hr>
+            <h4>Location</h4>
+            <p>India</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section container about">
+      <h2>About me</h2>
+      <p>I am an AIML student passionate about building intelligent systems and practical tools that solve real problems. I love working at the intersection of AI, cloud and web technologies to create useful and secure applications.</p>
+    </section>
+
+    <section id="skills" class="section container skills">
+      <h2>Skills</h2>
+      <div class="skill-list">
+        <span class="skill">AI Developer</span>
+        <span class="skill">UI/UX</span>
+        <span class="skill">Cloud Computing</span>
+        <span class="skill">Web Fullstack</span>
+        <span class="skill">Cybersecurity</span>
+        <span class="skill">Data Science & Analytics</span>
+        <span class="skill">React Native</span>
+      </div>
+    </section>
+
+    <section id="projects" class="section container projects">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <article class="project-card">
+          <h3>Face Recognition Attendance System</h3>
+          <p class="muted">AI &amp; ML • Computer Vision • Python</p>
+          <p>An AI and Machine Learning–based attendance system that uses a camera to capture and recognize faces in real time, automating attendance marking for educational institutions. Improves accuracy and saves administrative time.</p>
+          <p><strong>Built with:</strong> Python, OpenCV, face_recognition, NumPy, Flask</p>
+          <div class="proj-actions">
+            <button class="btn small" onclick="openProjectModal(1)">More</button>
+            <a class="link" href="#" target="_blank" rel="noopener">GitHub (coming)</a>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card">
+          <h3>AI Chatbot for Ticket Booking</h3>
+          <p class="muted">NLP • Conversational AI • Node / Python</p>
+          <p>An AI chatbot that assists users with booking tickets (movies, events). Integrates NLP to understand user queries, recommends options, and handles booking flows.</p>
+          <p><strong>Built with:</strong> Dialogflow / Rasa (or custom), Node.js / Flask, REST APIs</p>
+          <div class="proj-actions">
+            <button class="btn small" onclick="openProjectModal(2)">More</button>
+            <a class="link" href="#" target="_blank" rel="noopener">Live demo (coming)</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section container contact">
+      <h2>Contact</h2>
+      <p>If you'd like to collaborate or see more projects, reach out:</p>
+      <ul class="contact-list">
+        <li>Email: <a href="mailto:rishigeshkrishnasamy412@gmail.com">rishigeshkrishnasamy412@gmail.com</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/rishigesh76?utm_source" target="_blank" rel="noopener">rishigesh76</a></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Rishigesh — AI &amp; ML Student</p>
+    </div>
+  </footer>
+
+  <!-- Modal for project details -->
+  <div id="projectModal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close" onclick="closeProjectModal()">✕</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
